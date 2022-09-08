@@ -1,0 +1,83 @@
+﻿<Window x:Class="NettoyagePCApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NettoyagePCApp"
+        mc:Ignorable="d"
+        x:Name="fenetre"
+        Title="CleanPC" Height="700" Width="1000" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="/ico.ico">
+    <Grid>
+        <Rectangle HorizontalAlignment="Center" Height="175" Stroke="Black" VerticalAlignment="Top" Width="1000" RenderTransformOrigin="0.455,-0.031" Fill="#FF007791" StrokeThickness="0"/>
+        <Rectangle HorizontalAlignment="Center" Height="11" Stroke="Black" VerticalAlignment="Top" Width="1000" RenderTransformOrigin="0.455,-0.031" Fill="#FFD8D8D8" Margin="0,175,0,0" StrokeThickness="0"/>
+
+        <!-- Title -->
+        <Label x:Name="title" Content="Analyse du PC nécessaire" HorizontalAlignment="Left" Margin="43,25,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Arial" Height="63" Width="514" FontSize="40" FontWeight="Bold"/>
+
+        <!-- SS Title -->
+        <Label Content="Espace à nettoyer :" HorizontalAlignment="Left" Margin="43,88,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Arial" Height="38" Width="238" FontSize="22" FontWeight="Bold" RenderTransformOrigin="0.534,-0.025"/>
+        <Label Content="Dernière analyse :" HorizontalAlignment="Left" Margin="43,121,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Arial" Height="38" Width="238" FontSize="22" FontWeight="Bold" RenderTransformOrigin="0.475,1.843"/>
+
+        <!-- Valeurs -->
+        <Label x:Name="date" Content="Jamais" HorizontalAlignment="Left" Margin="251,121,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Arial" Height="38" Width="116" FontSize="22" RenderTransformOrigin="0.475,1.843"/>
+        <Label x:Name="space" Content="??? Mb" HorizontalAlignment="Left" Margin="261,88,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Arial" Height="38" Width="116" FontSize="22" RenderTransformOrigin="0.475,1.843"/>
+        <Button x:Name="btn" Content="ANALYSER" HorizontalAlignment="Left" Margin="676,56,0,0" VerticalAlignment="Top" Height="70" Width="274" Background="#FF007791" BorderThickness="5,5,5,5" BorderBrush="White" Foreground="#FFFBFBFB" FontFamily="Arial" FontWeight="Bold" FontSize="25" Click="btn_Click"/>
+
+        <!-- Content -->
+
+        <Button Content="&#xD;&#xA;NETTOYER" HorizontalAlignment="Left" Margin="32,199,0,0" VerticalAlignment="Top" Height="161" Width="347" Background="#FF007791" BorderThickness="5,5,5,5" BorderBrush="White" Foreground="#FFFBFBFB" FontFamily="Arial" FontWeight="Bold" FontSize="25" RenderTransformOrigin="0.5,0.5" Click="Button_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.384"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button Content="&#xD;&#xA;MISE A JOUR" HorizontalAlignment="Left" Margin="32,380,0,0" VerticalAlignment="Top" Height="160" Width="347" Background="#FF007791" BorderThickness="5,5,5,5" BorderBrush="White" Foreground="#FFFBFBFB" FontFamily="Arial" FontWeight="Bold" FontSize="25" RenderTransformOrigin="0.5,0.5" Click="Button_Click_1">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.384"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button Content="&#xD;&#xA;HISTORIQUE" HorizontalAlignment="Left" Margin="622,199,0,0" VerticalAlignment="Top" Height="161" Width="347" Background="#FF007791" BorderThickness="5,5,5,5" BorderBrush="White" Foreground="#FFFBFBFB" FontFamily="Arial" FontWeight="Bold" FontSize="25" RenderTransformOrigin="0.5,0.5" Click="Button_Click_2">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.384"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button Content="&#xD;&#xA;SITE WEB" HorizontalAlignment="Left" Margin="622,380,0,0" VerticalAlignment="Top" Height="160" Width="347" Background="#FF007791" BorderThickness="5,5,5,5" BorderBrush="White" Foreground="#FFFBFBFB" FontFamily="Arial" FontWeight="Bold" FontSize="25" RenderTransformOrigin="0.5,0.5" Click="Button_Click_3">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.384"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Image HorizontalAlignment="Left" Height="62" Margin="176,215,0,0" VerticalAlignment="Top" Width="70"  Source="/icons8-balayer-100.png" IsHitTestVisible="False"/>
+        <Image HorizontalAlignment="Left" Height="62" Margin="762,215,0,0" VerticalAlignment="Top" Width="70"  Source="/ico-list.png" IsHitTestVisible="False"/>
+        <Image HorizontalAlignment="Left" Height="62" Margin="162,393,0,0" VerticalAlignment="Top" Width="70"  Source="/icons8-mettre-à-jour-la-rotation-à-gauche-100 - Copier.png" IsHitTestVisible="False"/>
+        <Image HorizontalAlignment="Left" Height="62" Margin="762,393,0,0" VerticalAlignment="Top" Width="70"  Source="/icons8-domaine-64.png" IsHitTestVisible="False"/>
+
+
+        <!-- Footer -->
+        <Rectangle HorizontalAlignment="Center" Height="93" Stroke="Black" VerticalAlignment="Top" Width="1000" RenderTransformOrigin="0.455,-0.031" Fill="#FFD8D8D8" Margin="0,591,0,0" StrokeThickness="0"/>
+        <Label  Content="Copyright 2022 - Geoffrey" HorizontalAlignment="Center" Margin="0,600,0,0" VerticalAlignment="Top" Foreground="#FF080808" FontFamily="Arial" Height="38" Width="972" FontSize="22" RenderTransformOrigin="0.475,1.843" HorizontalContentAlignment="Center"/>
+
+        <Rectangle HorizontalAlignment="Center" Height="41" Stroke="Black" VerticalAlignment="Top" Width="1000" RenderTransformOrigin="0.455,-0.031" Fill="#FFEE6D6D" Margin="0,643,0,0" StrokeThickness="0" Visibility="Hidden"/>
+        <Label x:Name="actu" Content="Copyright 2022 - Geoffrey" HorizontalAlignment="Center" Margin="0,646,0,0" VerticalAlignment="Top" Foreground="#FF080808" FontFamily="Arial" Height="38" Width="972" FontSize="22" RenderTransformOrigin="0.475,1.843" HorizontalContentAlignment="Center" Visibility="Hidden"/>
+
+
+    </Grid>
+</Window>
