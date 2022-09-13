@@ -21,11 +21,11 @@
         <!-- Valeurs -->
         <Label x:Name="date" Content="Jamais" HorizontalAlignment="Left" Margin="251,121,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Arial" Height="38" Width="116" FontSize="22" RenderTransformOrigin="0.475,1.843"/>
         <Label x:Name="space" Content="??? Mb" HorizontalAlignment="Left" Margin="261,88,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Arial" Height="38" Width="116" FontSize="22" RenderTransformOrigin="0.475,1.843"/>
-        <Button x:Name="btn" Content="ANALYSER" HorizontalAlignment="Left" Margin="676,56,0,0" VerticalAlignment="Top" Height="70" Width="274" Background="#FF007791" BorderThickness="5,5,5,5" BorderBrush="White" Foreground="#FFFBFBFB" FontFamily="Arial" FontWeight="Bold" FontSize="25" Click="btn_Click"/>
+        <Button x:Name="btn" Content="ANALYSER" HorizontalAlignment="Left" Margin="676,56,0,0" VerticalAlignment="Top" Height="70" Width="274" Background="#FF007791" BorderThickness="5,5,5,5" BorderBrush="White" Foreground="#FFFBFBFB" FontFamily="Arial" FontWeight="Bold" FontSize="25" Click="Button_ANALYSER_Click"/>
 
         <!-- Content -->
 
-        <Button Content="&#xD;&#xA;NETTOYER" HorizontalAlignment="Left" Margin="32,199,0,0" VerticalAlignment="Top" Height="161" Width="347" Background="#FF007791" BorderThickness="5,5,5,5" BorderBrush="White" Foreground="#FFFBFBFB" FontFamily="Arial" FontWeight="Bold" FontSize="25" RenderTransformOrigin="0.5,0.5" Click="Button_Click">
+        <Button x:Name="btnClean" Content="&#xD;&#xA;NETTOYER" HorizontalAlignment="Left" Margin="32,199,0,0" VerticalAlignment="Top" Height="161" Width="347" Background="#FF007791" BorderThickness="5,5,5,5" BorderBrush="White" Foreground="#FFFBFBFB" FontFamily="Arial" FontWeight="Bold" FontSize="25" RenderTransformOrigin="0.5,0.5" Click="Button_CLEAN_Click">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -35,7 +35,7 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <Button Content="&#xD;&#xA;MISE A JOUR" HorizontalAlignment="Left" Margin="32,380,0,0" VerticalAlignment="Top" Height="160" Width="347" Background="#FF007791" BorderThickness="5,5,5,5" BorderBrush="White" Foreground="#FFFBFBFB" FontFamily="Arial" FontWeight="Bold" FontSize="25" RenderTransformOrigin="0.5,0.5" Click="Button_Click_1">
+        <Button Content="&#xD;&#xA;MISE A JOUR" HorizontalAlignment="Left" Margin="32,380,0,0" VerticalAlignment="Top" Height="160" Width="347" Background="#FF007791" BorderThickness="5,5,5,5" BorderBrush="White" Foreground="#FFFBFBFB" FontFamily="Arial" FontWeight="Bold" FontSize="25" RenderTransformOrigin="0.5,0.5" Click="Button_MAJ_Click">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -45,7 +45,7 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <Button Content="&#xD;&#xA;HISTORIQUE" HorizontalAlignment="Left" Margin="622,199,0,0" VerticalAlignment="Top" Height="161" Width="347" Background="#FF007791" BorderThickness="5,5,5,5" BorderBrush="White" Foreground="#FFFBFBFB" FontFamily="Arial" FontWeight="Bold" FontSize="25" RenderTransformOrigin="0.5,0.5" Click="Button_Click_2">
+        <Button Content="&#xD;&#xA;HISTORIQUE" HorizontalAlignment="Left" Margin="622,199,0,0" VerticalAlignment="Top" Height="161" Width="347" Background="#FF007791" BorderThickness="5,5,5,5" BorderBrush="White" Foreground="#FFFBFBFB" FontFamily="Arial" FontWeight="Bold" FontSize="25" RenderTransformOrigin="0.5,0.5" Click="Button_HISTORIQUE_Click">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -55,7 +55,7 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <Button Content="&#xD;&#xA;SITE WEB" HorizontalAlignment="Left" Margin="622,380,0,0" VerticalAlignment="Top" Height="160" Width="347" Background="#FF007791" BorderThickness="5,5,5,5" BorderBrush="White" Foreground="#FFFBFBFB" FontFamily="Arial" FontWeight="Bold" FontSize="25" RenderTransformOrigin="0.5,0.5" Click="Button_Click_3">
+        <Button Content="&#xD;&#xA;SITE WEB" HorizontalAlignment="Left" Margin="622,380,0,0" VerticalAlignment="Top" Height="160" Width="347" Background="#FF007791" BorderThickness="5,5,5,5" BorderBrush="White" Foreground="#FFFBFBFB" FontFamily="Arial" FontWeight="Bold" FontSize="25" RenderTransformOrigin="0.5,0.5" Click="Button_WEB_Click">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
